@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/register.css">
+  <script src="https://kit.fontawesome.com/a665e85003.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="../img/ICO_PAGE.png" type="image/x-icon">
+</head>
+<body>
+  <div class="modal-background"></div>
+  <div class="modal">
+    <i class="fa-solid fa-check-double"></i>
+    <div class="text-container">
+      <p>¡Tu usuario ha sido creado exitosamente!<br>Serás redirigido al login en <span class="modal-count">3</span></p>
+    </div>
+    <div class="loader"></div>
+  </div>
+
+  <div class="form-container">
+    <h2>Crear Cuenta</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="username">Nombre de usuario</label>
+        <input type="text" id="username" name="username" required />
+        <small class="error" id="username-error"></small>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+        <small class="error" id="email-error"></small>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required />
+        <small class="error" id="password-error"></small>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirmar contraseña</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required />
+        <small class="error" id="confirm-password-error"></small>
+      </div>
+      <button type="submit">Registrarse</button>
+    </form>
+    <div class="register-link">
+      ¿Ya tienes una cuenta? <a href="../index.html">Inicia sesión</a>
+    </div>
+  </div>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

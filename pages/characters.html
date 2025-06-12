@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personajes - Rick and Morty</title>
+  <link rel="stylesheet" href="../css/characters.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css" />
+  <script src="https://kit.fontawesome.com/a665e85003.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="../img/ICO_PAGE.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Personajes</h1>
+    <nav>
+      <a href="favorites.html">Favoritos</a>
+      <a href="profile.html">Perfil</a>
+
+      <div class="profile-picture-ctn">
+        <img src="../img/BLANK_PROFILE_PICTURE.png" alt="">
+      </div>
+
+      <div class="user-options">
+        <a href="profile.html">Perfil</a>
+        <a href="favorites.html">Favoritos</a>
+        <button id="logoutBtn"><i class="si-login"></i>Cerrar sesión</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="loader" id="loader"></div>
+
+    <div class="character-list">
+    </div>
+
+    <div class="pages-buttons">
+      <div class="previous-page-buttons">
+        <button id="first-page-button"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="previous-page-button"><i class="fa-solid fa-backward"></i></button>
+      </div>
+      <div class="next-page-buttons">
+        <button id="next-page-button"><i class="fa-solid fa-forward"></i></button>
+        <button id="last-page-button"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/characters.js"></script>
+  <script src="../js/header.js"></script>
+</body>
+</html>
