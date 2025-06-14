@@ -17,7 +17,7 @@ if (loginForm){
     const email = loginForm.email.value.trim();
     const password = loginForm.password.value.trim();
 
-    const users = JSON.parse(localStorage.getItem('users'));
+    const users = JSON.parse(localStorage.getItem('users')) || [];
     const user = users.find(user => user.email === email)
 
     if (!user) {
