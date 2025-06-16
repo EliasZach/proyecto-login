@@ -64,10 +64,22 @@ profileForm.addEventListener('submit', (e)=> {
   alert('Datos actualizados con éxito');
 });
 
+/**
+ * @function showError
+ * Muestra un mensaje de error estableciendo el contenido de texto del elemento especificado.
+ *
+ * @param {string} id - El ID del elemento HTML donde se mostrará el mensaje de error.
+ * @param {string} message - El mensaje de error a mostrar.
+ */
 function showError(id, message){
   document.getElementById(id).textContent = message;
 }
 
+/**
+ * @function clearErrors
+ * Limpia todos los mensajes de error en la página estableciendo el contenido de texto
+ * de todos los elementos con la clase 'error' a una cadena vacía.
+ */
 function clearErrors(){
   document.querySelectorAll('.error').forEach(error => error.textContent = '');
 }

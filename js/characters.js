@@ -81,6 +81,15 @@ document.querySelector('.character-list').addEventListener('click', (e)=>{
   }
 })
 
+
+/**
+ * @function updatePaginationButtons
+ * Actualiza la visibilidad de los botones de paginación "anterior" y "siguiente" según la página actual.
+ * Oculta el botón "anterior" si se está en la primera página y oculta el botón "siguiente" si se está en la última página.
+ *
+ * @param {number} page - Número de la página actual.
+ * @param {number} maxPage - Número total de páginas disponibles.
+ */
 function updatePaginationButtons(page, maxPage) {
   document.querySelector('.previous-page-buttons').style.display = (page === 1) ? 'none' : 'block';
   document.querySelector('.next-page-buttons').style.display = (page === maxPage) ? 'none' : 'block';
