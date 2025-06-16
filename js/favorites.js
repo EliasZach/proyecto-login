@@ -1,10 +1,15 @@
 const loggedUser = JSON.parse(localStorage.getItem('loggedUser'))
-
 if(!loggedUser) {
   window.location.href = '../index.html'
 }
 
-fetchFavorites()
+if (loggedUser.favorites.length === 0) {
+  const noFavorites = document.querySelector('.no-favorites')
+  noFavorites.style.display = 'grid'
+} else {
+  fetchFavorites()
+}
+
 async function fetchFavorites() {
   const characterList = document.querySelector('.character-list');
   characterList.innerHTML = '';

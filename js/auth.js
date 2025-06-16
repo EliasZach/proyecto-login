@@ -1,5 +1,4 @@
 const loggedUser = JSON.parse(localStorage.getItem('loggedUser'))
-
 if(loggedUser) {
   window.location.href = './pages/characters.html'
 }
@@ -55,7 +54,7 @@ if(registerForm){
   function validateInputs(username, email, password, confirmPassword) {
     let isValid = true;
     if (!/^[a-zA-Z0-9_-]{4,16}$/.test(username)) {
-      showError('username-error', 'Usuario inválido (4-16 caracteres, letras/números)');
+      showError('username-error', 'Usuario inválido (4-16 caracteres, letras/números, sin espacios)');
       isValid = false;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {

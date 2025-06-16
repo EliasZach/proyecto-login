@@ -121,4 +121,22 @@ nav div > a {
   border-radius: 3px;
   transform: rotate(44deg);
 }
+
+@media (max-width: 360px) {
+
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav a {
+    display: none;
+  }
+
+  nav div > a {
+    display: block;
+  }
+}
 /* Final de estilos de header */

@@ -227,21 +227,3 @@ main {
 .previous-page-buttons {
   display: none;
 }
-
-@media (max-width: 360px) {
-
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 500px) {
-  nav a {
-    display: none;
-  }
-
-  nav div > a {
-    display: block;
-  }
-}

@@ -1,0 +1,8 @@
+.no-favorites {
+  color: #fff;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  display: none;
+}
